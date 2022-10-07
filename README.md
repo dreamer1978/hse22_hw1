@@ -16,7 +16,7 @@ seqtk sample -s920 oilMP_S4_L001_R1_001.fastq 1500000 > msub1.fq
 seqtk sample -s920 oilMP_S4_L001_R2_001.fastq 1500000 > msub2.fq
 ```
 
-С помощью программ fastQC и multiQC оцениваем качество исходных чтений и получаем по ним общую **статистику**.
+С помощью программ fastQC и multiQC оцениваем качество исходных чтений и получаем по ним общую [**статистику**](https://github.com/dreamer1978/hse22_hw1/blob/main/statistics/README.md).
 ```
 fastqc sub1.fq
 fastqc sub2.fq
@@ -25,7 +25,7 @@ fastqc msub2.fq
 multiqc .
 ```
 
-С помощью программ platanus_trim и platanus_internal_trim подрезаем чтения по качеству и удалить адаптеры
+С помощью программ platanus_trim и platanus_internal_trim подрезаем чтения и удаляем адаптеры
 ```
 platanus_trim sub1.fq sub2.fq
 platanus_internal_trim msub1.fq msub2.fq
@@ -46,7 +46,7 @@ rm msub2.fq
 rm msub1.fq
 ```
 
-С помощью программы fastQC и multiQC оценить качество подрезанных чтений и получаем по ним общую **статистику**.
+С помощью программы fastQC и multiQC оценива качество подрезанных чтений и получаем по ним общую [**статистику**](https://github.com/dreamer1978/hse22_hw1/blob/main/statistics/README.md).
 ```
 fastqc *trimmed
 multiqc .
@@ -99,7 +99,7 @@ print('N50', n50)
 - длина самого длинного контига 179307
 - N50 47993
  
-С помощью программы “ platanus scaffold” собрараем скаффолды из контигов, а также из подрезанных чтений.
+С помощью программы “ platanus scaffold” собираем скаффолды из контигов, а также из подрезанных чтений.
 ```
 platanus gap_close -o GAP_CLOSE -c SCAF_scaffold.fa ../sub1.fq.trimmed ../sub2.fq.trimmed -OP2 ../msub1.fq.int_trimmed ../msub2.fq.int_trimmed 2> gap_close.log
 ```
