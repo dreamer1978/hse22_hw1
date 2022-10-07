@@ -58,7 +58,7 @@ platanus assemble -f sub1.fq.trimmed sub2.fq.trimmed 2> assemble.log
 ```
 **Анализ полученных контигов.**
 
-Ссылка на collab: https://colab.research.google.com/drive/1kQxTdcArcjqGPdhR3LVAd5iLewEFFa2i#scrollTo=DcbVqy5Ta8cP
+Ссылка на collab: https://colab.research.google.com/drive/1kQxTdcArcjqGPdhR3LVAd5iLewEFFa2i?usp=sharing
 ```
 contigs_number = 0
 contigs_len = 0
