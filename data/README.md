@@ -1,4 +1,4 @@
-Файл contigs.fasta –   все полученные контиги - *out_contig.fa*
-Файл scaffolds.fasta – все полученные скаффолды (после команды gap_close) - *GAP_CLOSE_gapClosed.fa*
-Также есть файл до команды gap_close c контигами - *SCAF_scaffold.fa*
-Файл longest.fasta – последовательность самого длинного скаффолда
+- Файл contigs.fasta –   все полученные контиги - *out_contig.fa*
+- Файл scaffolds.fasta – все полученные скаффолды (после команды gap_close) - *GAP_CLOSE_gapClosed.fa*
+- Также есть файл до команды gap_close c контигами - *SCAF_scaffold.fa*
+- Файл longest.fasta – последовательность самого длинного скаффолда
